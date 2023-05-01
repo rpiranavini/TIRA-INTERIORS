@@ -27,3 +27,87 @@ position: absolute;
     color:  #3a3c5feb;
     
 }
+.designs {
+    background-color: #b4b9b1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.D {
+    display: flex;
+    height: 85%;
+    width: 25%;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+}
+
+.D img {
+    height: 300px;
+    width: 450px;
+    object-fit: fill;
+    transition: 0.3s ease;
+}
+
+.intro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#364a499e;
+    color: #ffffff;
+    padding: 35%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-align: center;
+    
+}
+.D:hover img {
+    transition: 0.3s;
+    scale: 1.1;
+   
+}
+
+.D:hover .intro {
+    transform: translateY(0);
+}
+h4{
+    font-size: 30px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+    
+.C{
+    display: flex;
+    padding: 100px;
+    position: relative;
+    margin: 20px;
+    
+
+}
+.C img{
+    height:90px;
+    width:90px;
+    cursor: pointer;
+    position: relative;
+  animation: image-animation 1s infinite;
+  }
+  
+  @keyframes image-animation {
+    0% {
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(0.75);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+ 
+  
+
