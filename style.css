@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 
-.banner{
+.banner {
     background-image: url(background.jpg);
     background-position: center;
     background-size: cover;
@@ -12,22 +12,48 @@
     height: 100vh;
     opacity: 0.7;
 }
+
 #logo {
     position: absolute;
-    top: 3%;
-    left: 2%;
-    height: 100px;
-    width: 100px;
+    top: 5px;
+    left: 15px;
+    height: 80px;
+    width: 80px;
 }
-header{
-    font-size: 48px;
-   top: 6%;
-   left: 10%;
+
+header {
+    color: #665252;
+font-size: 45px;
+top: 20px;
+left: 100px;
 position: absolute;
-    color:  #3a3c5feb;
-    background-color: azure;
+}
+.heading{
+    background-color: rgba(255, 255, 255, 0.858);
+   
+}
+
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: #b4b9b1;
     
 }
+
 .designs {
     background-color: #b4b9b1;
     display: flex;
@@ -56,78 +82,87 @@ position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color:#364a499e;
+    background-color: #364a499e;
     color: #ffffff;
 
     transform: translateY(100%);
     transition: transform 0.3s ease;
-   text-align: center;
+    text-align: center;
     height: 150px;
     width: 400px;
 }
+
 .D:hover img {
     transition: 0.3s;
     scale: 1.1;
-   
+
 }
 
 .D:hover .intro {
     transform: translateY(0);
 }
-h4{
+
+h4 {
     font-size: 30px;
-    
+
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: center;
     background-color: #b4b9b1;
 }
-    
-.C{
+
+.C {
     display: flex;
     padding: 100px;
     position: relative;
     margin: 20px;
-    
+
 
 }
-.C img{
-    height:90px;
-    width:90px;
+
+.C img {
+    height: 90px;
+    width: 90px;
     cursor: pointer;
     position: relative;
-  animation: image-animation 1s infinite;
-  justify-content: center;
-  }
-  
-  @keyframes image-animation {
+    animation: image-animation 1s infinite;
+    justify-content: center;
+}
+
+@keyframes image-animation {
     0% {
-      transform: scale(1);
-    }
-    50%{
-      transform: scale(0.75);
-    }
-    100%{
         transform: scale(1);
     }
-  }
- h1{
+
+    50% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1 {
     text-align: center;
     font-size: 40px;
     background-color: antiquewhite;
     padding: 15px;
-   
- }
- figcaption{
+
+}
+
+figcaption {
     justify-content: center;
     font-size: 18px;
- }
-  a{
+}
+
+a {
     cursor: pointer;
     color: #665252;
-  }
-  a:hover{
-    color: beige;
-  }
+}
 
+a:hover {
+    color: beige;
+}
